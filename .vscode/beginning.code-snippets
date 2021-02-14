@@ -1,0 +1,18 @@
+{
+	"start":{
+		"prefix":"inc",
+		"body":"#include <iostream>\n\nusing namespace std;\n\nint main(){\n\t$1\n}",
+		"description": "starter code",
+	},
+	"new function": {
+		"prefix": "fn",
+		"body": [
+		  "${1:type} ${2:functionName} (${3:parameters})",
+		  "{",
+		  "    $4",
+		  "    return ;",
+		  "}"
+		],
+		"description": "new function"
+	  }
+}
